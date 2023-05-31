@@ -23,6 +23,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: "context"
-    env:
-      COMMIT_ID: ${{ github.sha }}
-    run: echo "Commit id => $COMMIT_ID"
+      env:
+        COMMIT_ID: ${{ github.sha }}
+      run: echo "Commit id => $COMMIT_ID"
